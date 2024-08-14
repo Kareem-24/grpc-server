@@ -1,0 +1,6 @@
+
+gen:
+protoc --proto_path=protos protos/*.proto  --go-grpc_out=.
+
+protogen:
+	protoc --go_out=. --go-grpc_out=. protos/*.proto
